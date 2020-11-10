@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 3 React</title>
+</head>
+<body>
+    <!-- buat id untuk menampilkan hasil pemrosesan yg dilakukan reactJS -->
+    <div id="hasil"></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    
+    <script type="text/babel">
+    //tulis code reactJS disini
+        const hasil= document.getElementById('hasil');
+        let a=10;
+        let t=20;
+        let L=0;
+        const element=(
+            <div>
+                <h2> Hitung Luas Segitiga</h2>
+                <p> 
+                Ukuran alas = {a} cm<br/>
+                Ukuran tinggi = {t} cm<br/>
+                Luas = 0.5 x{a}x{t} = {0.5*a*t} cm<sup>2</sup>
+                </p>
+            </div>
+        );
+        ReactDOM.render(element,hasil); 
+    </script>
+
+</body>
+</html>

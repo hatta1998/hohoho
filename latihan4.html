@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 4 React</title>
+</head>
+<body>
+    <!-- buat id untuk menampilkan hasil pemrosesan yg dilakukan reactJS -->
+    <div id="hasil"></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    
+    <script type="text/babel">
+    //tulis code reactJS disini
+        const hasil= document.getElementById('hasil');
+        //const apaaja=<h1>Hai apa kabar</h1>;
+       function ApaAja(){
+           let nama="Hatta";
+           return(
+            <div>
+                <h1>Hai Apa kabar {nama}</h1>
+                <p>Selamat datang di ReastJS</p>
+            </div>
+           );
+       }
+
+        ReactDOM.render(<ApaAja/>,hasil); 
+    </script>
+
+</body>
+</html>

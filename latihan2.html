@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 2 React</title>
+</head>
+<body>
+    <!-- buat id untuk menampilkan hasil pemrosesan yg dilakukan reactJS -->
+    <div id="hasil"></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    
+    <script type="text/babel">
+    //tulis code reactJS disini
+        const hasil= document.getElementById('hasil');
+        const nama="Hatta";
+        const pemrograman="ReactJS";
+        const apaaja=(
+            <div>
+                <h1 align="center">Hai {nama}</h1>
+                <p align="center"> Selamat Datang di Bahasa Pemrograman {pemrograman} </p>
+                <p>Penjumlahan 2+2 ={2+2}</p>
+            </div>
+        );
+        ReactDOM.render(apaaja,hasil); 
+    </script>
+
+</body>
+</html>
